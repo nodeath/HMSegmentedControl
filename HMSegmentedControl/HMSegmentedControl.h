@@ -71,7 +71,6 @@ typedef enum {
  Default is [UIColor blackColor]
  */
 @property (nonatomic, strong) UIColor *selectedTextColor;
-
 /*
  Segmented control background color.
  
@@ -93,6 +92,7 @@ typedef enum {
  */
 @property (nonatomic, assign) HMSegmentedControlType type;
 
+@property (nonatomic, strong) UIColor *selectedBackgroundColor; // default is [UIColor whiteColor]
 /*
  Specifies the style of the selection indicator.
  
