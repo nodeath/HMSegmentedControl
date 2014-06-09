@@ -259,7 +259,7 @@
                 segRect.size.width = self.segmentWidth;
                 CALayer *stripLayer = [CALayer layer];
                 stripLayer.frame = CGRectMake(0, 0, self.scrollView.frame.size.width, self.selectionIndicatorStripLayer.frame.size.height);
-                stripLayer.backgroundColor = [[UIColor lightGrayColor] CGColor];
+                stripLayer.backgroundColor = [[UIColor colorWithRed:204/255.0 green:204/255.0 blue:204/255.0 alpha:1.0] CGColor];
                 [self.scrollView.layer addSublayer:stripLayer];
 
                 CALayer *bgndLayer = [CALayer layer];
@@ -268,7 +268,7 @@
                 } else {
                     bgndLayer.frame = CGRectMake(segRect.origin.x-1, -1, segRect.size.width, segRect.size.height);
                 }
-                bgndLayer.borderColor = [[UIColor blackColor] CGColor];
+                bgndLayer.borderColor = [[UIColor colorWithRed:204/255.0 green:204/255.0 blue:204/255.0 alpha:1.0] CGColor];
                 bgndLayer.borderWidth = 1.0f;
                 [self.scrollView.layer addSublayer:bgndLayer];
             }
